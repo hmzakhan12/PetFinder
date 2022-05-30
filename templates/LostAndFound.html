@@ -1,0 +1,41 @@
+{% extends "dashboard.html" %}
+{%block postBtn %} {% endblock %}
+{%block Post %} {% endblock %}
+{% block bar %}
+
+
+  <div class="myGrid">
+
+  <div class="card-wrapper" style="justify-content:center; margin-left:25%">
+
+
+
+    <div class="card">
+
+      <h1 class="center">Lost/Found a Pet?</h1>
+
+
+        <form name="animal_form" action="/post/animal" method="post" enctype="multipart/form-data">
+
+            <label >Type</label>
+            <input type="text" name="type" class="field" required>
+
+
+            <label >Location</label>
+            <input type="text" name="petLocation" class="field" required>
+
+            <label>Upload file</label>
+
+
+            <input type="file" name="image" >
+            <br><br>
+            <button type="submit" class="btn">Submit</button>
+
+        </form>
+
+
+    </div>
+  
+  </div>
+  </div>
+{% endblock %}

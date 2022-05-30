@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %} <title>DashBoard</title>  {%endblock%}
+{% block button %} <a href="/user/signout"><button > Logout </button></a> {%endblock%}
+{% block content %}
+
+
+
+    <br>
+
+
+
+
+
+    <div class="myGrid">
+        <div class="card" style="width:200px;">
+            <a href="/info"><h2 class="green" style="line-height: 300%;">Account Details</h2></a>
+            <h2 class="green" style="line-height: 300%;">Messages</h2>
+            <h2 class="green" style="line-height: 300%;">Settings</h2>
+            <h2 class="green"  style="line-height: 300%;">Help Center</h2>
+        </div>
+
+        {% block bar %}
+        {# Template inserted here #}
+        {% endblock %}
+
+        {% block Post %}<div>
+            <h1 class="green">Your Posts</h1>
+        </div> {% endblock %}
+
+        <div>
+            {%block postBtn %}<a href="/post"><button class="btn">+Add Post</button></a> {% endblock %}
+        </div>
+
+        {}
+
+    </div>
+
+
+
+{%endblock%}

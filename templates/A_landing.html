@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title%} <title>Lost Pet Finder </title> {% endblock %}
+
+{% block button %} <a href="/login"><button > Login </button></a> {% endblock %}
+
+
+
+{% block content %}
+
+        <div>
+
+
+            <div class="grid" style="margin-top: 5%;">
+                <div>
+                <p style="font-size:40px; color:#3A539B; line-height: 0.5cm;">We help reunite lost pets with their families</p>
+                <p style="font-size:30px; color: #3498DB;" >Use a photo to search lost and found pets</p>
+    
+                <br/><br/>
+    
+                    <div class="gridd">
+            
+                        <div >
+                            <a href="./form1.html"><img src="/static/lost.jpg" alt="lost" style="height: auto; width: auto;"></a>
+                        </div>
+                            
+                            
+                        <div >
+                            <img src="/static/found.png" alt="lost" style="height: 10rem; width: auto;">
+                        </div>
+
+                
+                    </div>
+
+                </div>
+                
+                <div>
+                <img src="/static/another image.png" alt="pet"  style="width:auto;height:100%; margin-right: 2%;" />
+                </div>
+    
+            </div>
+
+            <br/><br/>
+
+            <div style="border-color:orange;border-style:solid; border-radius:1em; width:80%; margin-left:10%">
+                <p style="font-size:25px;text-align:center; color: #3A539B;">1 in 3 pets will go missing in their lifetime, but 1 click can get them home</p>
+            </div>
+        </div>
+{%endblock%}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% block title%}{% endblock %}
+
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="/static/css/cssahmad.css">
+  
+
+</head>
+<body>
+
+   <div>
+            <header class="navbar">
+                <div>
+                    <a href="/dashboard"><img src="/static/logo.jpg" alt="logo" /></a>
+                    </div>
+                    <div class="headings">
+                    <a href="/post"  style="margin-left:30px;">Lost Pet </a>
+
+                    <a href="/post" style="margin-left:30px;">Found Pet </a>
+                    <a href="/"  style="margin-left:30px;"> Get Help </a>
+                    {% block button%}{% endblock %}
+                </div>
+              </header>
+   </div>
+
+
+  {% block content %}
+    {# Template inserted here #}
+  {% endblock %}
+  
+  <script src="/static/js/jquery.js"></script>
+  <script src="/static/js/scripts.js"></script>
+  
+</body>
+</html>

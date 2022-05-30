@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title%} <title>Sign Up </title> {% endblock %}
+{% block button %} <a href="/login"><button > Login </button></a> {%endblock%}
+{% block content %}
+
+
+  <div class="card-wrapper">
+
+    <div class="card">
+
+      <h1 class="center">Create an Account</h1>
+
+      <form name="signup_form" >
+
+        <label for="name">Name</label>
+        <input type="text" name="name" class="field" required>
+        
+        <label for="name">Location</label>
+        <input type="text" name="location" class="field" required>
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email" class="field" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" class="field" required>
+
+        <p class="error error--hidden"></p>
+
+        <input type="submit" value="Sign Up" class="btn">
+      
+      </form>
+      <p style="color: black; margin-left: 2cm;">Already have an account?<a href="/login"> Login</a></p>
+      <p style="color: black; margin-left: 1cm; text-align: justify;">When registering, you agree that we may use your provided data for the registration and to send you notifications on our products and services. You can unsubscribe from notifications at any time in your settings. For addtional information please refer to our Privacy Policy</p>
+      
+    </div>
+
+    <div>
+      <img src="/static/another image.png" alt="image here" style="height: 90%; width: auto;">
+    </div>
+
+
+
+
+
+  </div>
+
+{% endblock %}

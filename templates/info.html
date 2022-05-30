@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{%block title%} User Info {%endblock%}
+
+{% block content %}
+    <header class="navbar">
+    <div>
+        <img src="/static/logo.jpg" alt="logo" />
+        </div>
+        <div class="headings">
+        <a href="/post" style="margin-left:30px;">Lost Pet </a>
+
+        <a href="/post" style="margin-left:30px;">Found Pet </a>
+        <a href="/" style="margin-left:30px;"> Get Help </a>
+        <a href="/user/signout"><button > Logout </button></a>
+    </div>
+  </header>
+
+        <div class="myGrid">
+        <div class="card" style="width:200px;">
+            <a href="/info"><h2 class="green" style="line-height: 300%;">Account Details</h2></a>
+            <h2 class="green" style="line-height: 300%;">Messages</h2>
+            <h2 class="green" style="line-height: 300%;">Settings</h2>
+            <h2 class="green"  style="line-height: 300%;">Help Center</h2>
+        </div>
+
+        <div class="card" >
+
+            <h2 class="center">Your Info</h2>
+
+            <p style="color:#22313F;">
+                <strong>Name:</strong> {{ session['user']['name'] }}<br>
+                <strong>Email:</strong> {{ session['user']['email'] }}<br>
+                <strong>Location:</strong> {{ session['user']['location'] }}<br>
+            </p>
+
+    </div>
+
+       
+
+    </div>
+
+
+
+
+
+    </div>
+{%endblock%}
